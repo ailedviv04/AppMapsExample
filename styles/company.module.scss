@@ -1,0 +1,146 @@
+@import "./colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.spaceTitle {
+  margin-top: 1rem;
+}
+
+.wrapperInputs {
+  display: flex;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.inputLeft {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+.inputRight {
+  width: 50%;
+  padding-left: 1rem;
+}
+
+.sizeW {
+  width: 60%;
+}
+
+.vehicles_container {
+  display: flex;
+  flex-direction: column;
+
+  .vehicles_header {
+    display: flex;
+    flex-direction: row;
+    background-color: $vehicles_header;
+
+    font-size: 14px;
+    .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: $primary_dark;
+    }
+
+    .item_selected {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 20px;
+      font-weight: bold;
+      color: $white;
+      background-color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+
+//company page
+.company_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 100px 20px;
+
+  .company_profile {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid $box_shadow;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 140px;
+    position: relative;
+    padding: 10px;
+    .name {
+      font-weight: bold;
+      font-size: 20px;
+      color: $primary;
+    }
+
+    .key {
+      letter-spacing: 2px;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      top: -50px;
+      position: absolute;
+      border-radius: 100px;
+      border: 1px solid $box_shadow;
+      background-color: $white;
+    }
+  }
+
+  .company_forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      font-weight: bold;
+      span {
+        cursor: pointer;
+      }
+      .selected {
+        color: $primary;
+      }
+    }
+  }
+}

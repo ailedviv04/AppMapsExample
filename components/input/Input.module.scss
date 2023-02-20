@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  label {
+    font-size: 12px;
+    font-weight: bold;
+    color: $primary_dark;
+    padding-left: 5px;
+  }
+}
+
+.input {
+  border: 2px solid $gray;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  color: $primary_dark;
+  flex: 1;
+
+  &::placeholder {
+    color: $gray;
+  }
+  &:focus-visible {
+    outline: 0px;
+  }
+}

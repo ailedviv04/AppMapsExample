@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+
+.Button {
+  background-color: $primary;
+  color: $text_light;
+  border-radius: 8px;
+  padding: 10px;
+  border: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+.danger {
+  background-color: $danger;
+  color: $text_light;
+  border-radius: 8px;
+  padding: 10px;
+  border: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  min-width: 120px;
+}

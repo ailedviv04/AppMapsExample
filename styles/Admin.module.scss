@@ -1,0 +1,23 @@
+@import "./colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: $dashboard_background;
+  justify-content: space-between;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.children {
+  flex: 1;
+}
